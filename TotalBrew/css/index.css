@@ -1,0 +1,285 @@
+:root {
+  --primary-color: #fffdd0;
+  --secondary-color: #b68d40;
+  --accent-color: #122620;
+  --light-primary-color: #ffc557;
+}
+button {
+  cursor: pointer;
+}
+body {
+  background-color: var(--primary-color);
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--secondary-color);
+}
+.hero h2 {
+  font-size: clamp(1.25rem, 0.6rem + 2.6667vw, 3rem);
+  font-style: italic;
+  margin-top: 20%;
+  width: auto;
+  text-align: center;
+  color: var(--primary-color);
+}
+.hero button {
+  font-style: italic;
+  font-size: clamp(2rem, 1.6286rem + 1.5238vw, 3rem);
+  margin-top: 20%;
+  padding: 1.02rem;
+  border-radius: 24px;
+  border: none;
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+}
+.hero img {
+  margin-top: 20%;
+  margin-bottom: 40%;
+}
+/* .hamburger {
+
+} */
+.reviews {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  margin: 12em 0px;
+}
+.reviews-card {
+  border: 10px solid var(--accent-color);
+  font-size: clamp(1rem, 0.8143rem + 0.7619vw, 1.5rem);
+  width: 320px;
+  text-align: center;
+  color: var(--secondary-color);
+}
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+  margin: 12em 0;
+}
+.features-card {
+  width: 320px;
+
+  text-align: center;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  border-radius: 20px;
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+}
+.features-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 20px;
+}
+
+.img-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.features-card-top img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+.features-card-top h5 {
+  font-size: clamp(1.25rem, 0.7857rem + 1.9048vw, 2.5rem);
+  width: 240px;
+  color: var(--light-primary-color);
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5), 0 0 0 black;
+}
+.features-card p {
+  font-size: clamp(1rem, 0.8143rem + 0.7619vw, 1.5rem);
+}
+.email-sub {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+  margin: 16em 0;
+  overflow: hidden;
+}
+.primary-background {
+  width: 420px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  background-color: var(
+    --secondary-color
+  ); /* Adjust the background color as needed */
+  border-radius: 900px 900px 0 0; /* This creates the top half of the ellipse shape */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.email-sub article {
+  width: 360px;
+  text-align: center;
+  font-size: clamp(2rem, 1.2571rem + 3.0476vw, 4rem);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.email-sub form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-direction: column;
+  margin-bottom: 1em;
+  position: relative;
+  padding: 0 100%;
+  padding-top: 10em;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+}
+.email-sub form input {
+  border: 4px solid black;
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  width: 250px;
+  height: 60px;
+  font-size: clamp(1.5rem, 0.9429rem + 2.2857vw, 3rem);
+}
+.email-sub form button {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  font-size: clamp(2rem, 1.6286rem + 1.5238vw, 3rem);
+  width: 240px;
+  height: 80px;
+  border-radius: 24px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+/* desktop responsiveness */
+/* the only screen and part ensures that really old browsers can see the site with the right responsiveness */
+/* xs */
+@media only screen and (min-width: 475px) {
+}
+/* small */
+@media only screen and (min-width: 640px) {
+}
+/* medium main desktop */
+@media only screen and (min-width: 768px) {
+  .hero h2 {
+    margin-top: 2%;
+  }
+  .hero button {
+    margin-top: 1%;
+  }
+  .hero img {
+    margin-top: 1%;
+    margin-bottom: 20%;
+    width: 46em;
+  }
+
+  .reviews {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .reviews-card {
+    width: 30em;
+    height: 7em;
+    text-align: center;
+  }
+
+  .features {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8em;
+  }
+  .features-card {
+    width: 39.5em;
+    height: 14.5em;
+    justify-content: center;
+    align-items: center;
+  }
+  .features-card-top {
+    justify-content: space-around;
+  }
+  .img-background {
+    width: 5em;
+    height: 5em;
+  }
+  .features-card-top img {
+    width: 2.5em;
+    height: 2.5em;
+  }
+  .features-card-top h5 {
+    width: 12em;
+  }
+  .email-sub {
+    gap: 2px;
+  }
+  .email-sub article {
+    width: 12em;
+    text-align: center;
+  }
+  .primary-background {
+    width: 100%; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    border-radius: 800px 800px 0 0; /* This creates the top half of the ellipse shape */
+  }
+  .email-sub form {
+  }
+  .email-sub form input {
+    width: 12em;
+    height: 2.5em;
+  }
+  .email-sub form button {
+    width: 10em;
+    height: 2em;
+  }
+}
+/* large */
+@media only screen and (min-width: 1024px) {
+}
+/* x large */
+@media only screen and (min-width: 1280px) {
+}
+/* 2x large */
+@media only screen and (min-width: 1536px) {
+}
