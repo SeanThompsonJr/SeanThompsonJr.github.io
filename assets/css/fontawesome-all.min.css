@@ -868,7 +868,7 @@
 }
 .fa-chart-area:before {
   /* //! fix this with html unicode later */
-  content: url("./images/web-icons/icons8-html-5-50.png");
+  content: url("./images/web-icons/icon-html.png");
 }
 .fa-chart-bar:before {
   content: "\f080";
